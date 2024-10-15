@@ -20,7 +20,7 @@ namespace khabibullin
         public ServicePage()
         {
             InitializeComponent();
-            //123
+
             var currentServices = Khabibullin_autoserviceEntities.GetContext().Service.ToList();
             ServiceListView.ItemsSource = currentServices;
         }
